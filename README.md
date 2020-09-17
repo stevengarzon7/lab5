@@ -7,7 +7,7 @@
 ue utilizan la URL para la que se recibe la respuesta deben actualizarse.*
 
 *Qué otros códigos de error existen?¿En qué casos se manejan?*
-###Codigos de Error:
+### Codigos de Error:
 * Error 100: Esta respuesta provisional indica que todo hasta ahora está bien y que el cliente debe continuar con la solicitud o ignorarla si ya está terminada.
 * Error 200: La solicitud ha tenido éxito. El significado de un éxito varía dependiendo del método HTTP:
 * * GET: El recurso se ha obtenido y se transmite en el cuerpo del mensaje.
@@ -29,28 +29,28 @@ El archivo HTML tiene 3741 palabras usando el comando wc -c
 
 *¿Cuál es la diferencia entre los verbos GET y POST? ¿Qué otros tipos de peticiones existen?* HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado.
 
-###GET
+### GET
 solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.
 
-###POST
+### POST
 se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.
 
-###HEAD
+### HEAD
 pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.
 
-###PUT
+### PUT
 reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.
 
-###DELETE
+### DELETE
 borra un recurso en específico.
 
-###CONNECT
+### CONNECT
 establece un túnel hacia el servidor identificado por el recurso.
 
-###TRACE
+### TRACE
 realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.
 
-###OPTIONS
+### OPTIONS
 es utilizado para describir las opciones de comunicación para el recurso de destino.
 
 ¿Cuáles son las diferencias con los diferentes parámetros curl -v y -i?
@@ -59,7 +59,7 @@ es utilizado para describir las opciones de comunicación para el recurso de des
 * El comando curl -i nos muestra solo la informacoin completa del estado de la peticion en este caso 200
 
 
-#Parte ll.- Haciendo una aplicación Web dinámica a bajo nivel.
+# Parte ll.- Haciendo una aplicación Web dinámica a bajo nivel.
 
 ### Compile y ejecute la aplicación en el servidor embebido Tomcat, a través de Maven:
 
