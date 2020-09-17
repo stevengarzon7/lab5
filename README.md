@@ -68,3 +68,25 @@ es utilizado para describir las opciones de comunicación para el recurso de des
 ### Agregando parámetro GET
 
 ![](Img/saludoPersonalizado.JPG)
+
+# Parte III.
+
+*Creando formulario para ingresar el número*
+
+![](Img/formulario.JPG)
+
+
+La diferencia usando GET es que se muestra en la dirección URL la consulta con el parametro seleccionado
+
+![](Img/lista.JPG)
+
+Usando el método POST no se muestra la consulta, lo hace de forma oculta
+
+![](Img/listaPost.JPG)
+
+¿Qué se está viendo? Revise cómo están implementados los métodos de la clase Service.java para entender el funcionamiento interno.
+
+En la clase Service encontramos 3 metodos:
+
+* getTodo: Nos permite obtener todos los datos que necesitamos en este caso Id, UserId, Title, Completed pero esta información está en JSON (JavaScrip Object Notation) y luego por medio de Google Gson nos permite pasar de una representación JSON a un objeto java.
+todoToHTMLRow y todosToHTMLTable lo que nos permite es coger los objetos java que transformamos en el método anterior y convertirlos en HTML con un estilo de tabla para que el navegador nos pueda mostrar esta información.
