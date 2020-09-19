@@ -90,3 +90,44 @@ En la clase Service encontramos 3 metodos:
 
 * getTodo: Nos permite obtener todos los datos que necesitamos en este caso Id, UserId, Title, Completed pero esta información está en JSON (JavaScrip Object Notation) y luego por medio de Google Gson nos permite pasar de una representación JSON a un objeto java.
 todoToHTMLRow y todosToHTMLTable lo que nos permite es coger los objetos java que transformamos en el método anterior y convertirlos en HTML con un estilo de tabla para que el navegador nos pueda mostrar esta información.
+
+# Parte IV.
+
+![](Img/calculadora1.JPG)
+
+Probando el url http://localhost:8080/faces/calculadora.xhtml 
+
+![](Img/calculadora2.JPG)
+
+Insertando datos en el url http://localhost:8080/faces/calculadora.xhtml 
+
+![](Img/calculadora3.JPG)
+
+Probando en navegadores diferentes el url http://localhost:8080/faces/calculadora.xhtml 
+
+Tiene los mismo valores es decir cuando uso la calculadora en uno en el otro me aparece tambien.
+
+
+*Diferencias Application scope y Session Scope*
+
+Application Scope si para todos los servlets y JSP. No pertenece a ningún usuario. Por otro lado, Session Scope pertenece al usuario.
+
+Si desea tener información para cada usuario, debe usar Session Scope
+Si tiene que poner la información para todos los servlets o JSP independientemente del usuario, debe usar el Application Scope
+
+*Por medio de las herramientas de desarrollador del explorador (Usando la tecla "F12" en la mayoría de exploradores)*
+
+![](Img/calculadora4.JPG)
+
+*Para facilitar los intentos del usuario, se agregará una lista de los últimos valores ingresados*
+
+![](Img/calculadora5.JPG)
+
+
+
+
+
+
+
+
+
